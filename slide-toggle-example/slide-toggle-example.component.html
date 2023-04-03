@@ -1,0 +1,24 @@
+<table>
+  <tr>
+    <th class="example-label">Slide Toggle</th>
+    <td class="example-button-row">
+      <xy-slide-toggle #st1 color="accent" (change)="onChange($event, 'Accent', st1.checked)">Accent</xy-slide-toggle>
+    </td>
+   
+    <td class="example-button-row">
+      <xy-slide-toggle #st3 color="error" (change)="onChange($event, 'Error', st3.checked)">Error</xy-slide-toggle>
+    </td>
+  
+  </tr>
+  <tr>
+    <th class="example-label">Slide Toggle Disabled</th>
+    <td class="example-button-row">
+      <xy-slide-toggle #st7 color="accent" (change)="onChange($event, 'Accent', st7.checked)" disabled>Accent</xy-slide-toggle>
+    </td>
+   
+    <td class="example-button-row">
+      <xy-slide-toggle #st9 color="error" (change)="onChange($event, 'Error', st9.checked)" disabled>Error</xy-slide-toggle>
+    </td>
+   
+  </tr>
+</table>

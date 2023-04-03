@@ -1,0 +1,66 @@
+<div class="flex">
+    <div class="col">
+      <h4>Card with Icon</h4>
+      <xy-card title="Pop Up Title" [column]=1 (customEvent)="onCustomEvent()">
+        <xy-card-header-action>
+          <xy-button icon-button>
+            <mat-icon>share</mat-icon>
+          </xy-button>
+         <xy-button icon-button>
+            <mat-icon>settings</mat-icon>
+         </xy-button>
+        </xy-card-header-action>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. 
+        </p>
+        <xy-card-actions>
+          <xy-button text-button color="accent">Cancel</xy-button>
+          <xy-button standard-button  color="accent">>Add</xy-button>
+        </xy-card-actions>
+      </xy-card>
+    </div>
+
+    <div class="col">
+      <h4>Card with Button</h4>
+      <xy-card title="Pop Up Title" [showClose]="true"  [column]=1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. 
+        </p>
+        <xy-card-actions>
+          <xy-button text-button color="accent">Cancel</xy-button>
+          <xy-button standard-button color="accent">Add</xy-button>
+        </xy-card-actions>
+      </xy-card>
+    </div>
+
+    <div class="col">
+      <h4>Card with Image CTA</h4>
+      <xy-card title="Pop Up Title" [column]=1 image="https://images.pexels.com/photos/169193/pexels-photo-169193.jpeg?w=940&h=650&auto=compress&cs=tinysrgb">
+        <xy-card-header-action>
+          <xy-button icon-button>
+            <mat-icon>share</mat-icon>
+          </xy-button>
+         <xy-button icon-button>
+            <mat-icon>settings</mat-icon>
+         </xy-button>
+        </xy-card-header-action>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. 
+        </p>
+      </xy-card>
+    </div>
+
+    <div class="col">
+      <h4>Card with Image CTA (Without Icon)</h4>
+      <xy-card title="Pop Up Title" [column]=1 image="https://images.pexels.com/photos/169193/pexels-photo-169193.jpeg?w=940&h=650&auto=compress&cs=tinysrgb">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. 
+        </p>
+      </xy-card>
+    </div>
+</div>
+

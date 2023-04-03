@@ -1,0 +1,83 @@
+<xy-topAppBar title="XY Design System Sample Application" [linkToSidenav]="sidenav" color="primary" [multiple]="true" >
+  <div>
+    <xy-menu label="Theme">
+      <xy-menu-item (click)="onSelectTheme('light-indigo')">Light(Indigo)</xy-menu-item>
+      <xy-menu-item (click)="onSelectTheme('light-blue')">Light(Blue)</xy-menu-item>
+      <xy-menu-item (click)="onSelectTheme('dark')">Dark</xy-menu-item>
+    </xy-menu>
+
+    <xy-menu label="Font Size">
+      <xy-menu-item   (click)="onSelectFontSize('x-small')">x-small</xy-menu-item>
+      <xy-menu-item (click)="onSelectFontSize('small')">small</xy-menu-item>
+      <xy-menu-item (click)="onSelectFontSize('medium')">medium</xy-menu-item>
+      <xy-menu-item (click)="onSelectFontSize('large')">large</xy-menu-item>
+      <xy-menu-item (click)="onSelectFontSize('x-large')">x-large</xy-menu-item>
+    </xy-menu>
+    
+    <xy-menu label="Spacing">
+      <xy-menu-item (click)="onSelectSpacing('xxs')">XXS</xy-menu-item>
+      <xy-menu-item (click)="onSelectSpacing('xs')">XS</xy-menu-item>
+      <xy-menu-item (click)="onSelectSpacing('s')">S</xy-menu-item>
+      <xy-menu-item (click)="onSelectSpacing('m')">M</xy-menu-item>
+      <xy-menu-item (click)="onSelectSpacing('l')">L</xy-menu-item>
+      <xy-menu-item (click)="onSelectSpacing('xl')">XL</xy-menu-item>
+      <xy-menu-item (click)="onSelectSpacing('xxl')">XXL</xy-menu-item>
+      <xy-menu-item (click)="onSelectSpacing('xxxl')">XXXL</xy-menu-item>
+    </xy-menu>
+
+    <xy-button icon-button class="example-icon" color="accent"  aria-label="Example icon-button with heart icon">
+      <mat-icon>search</mat-icon>
+    </xy-button>
+    <xy-button icon-button class="example-icon" color="accent"  aria-label="Example icon-button with share icon">
+      <mat-icon>notifications_none</mat-icon>
+    </xy-button>
+    
+  </div>
+</xy-topAppBar>
+<xy-sidenav-container #sidenav sticky >
+  <xy-sidenav [draggable]="true">
+    <xy-button icon-button class="xy-sidenav-toolbox-item"><mat-icon>settings</mat-icon></xy-button>
+    <xy-button icon-button class="xy-sidenav-toolbox-item"><mat-icon>settings</mat-icon></xy-button>
+    <xy-button icon-button class="xy-sidenav-toolbox-item"><mat-icon>settings</mat-icon></xy-button>
+    <xy-spacer class="xy-sidenav-toolbox-item"></xy-spacer>
+    <xy-button text-button class="xy-sidenav-toolbox-item">See All</xy-button>
+    <xy-sidenav-item icon="home" name="Home" routerLink="/">Home</xy-sidenav-item>
+    <xy-sidenav-item icon="autocomplete" name="Autocomplete" routerLink="/autocomplete">Autocomplete</xy-sidenav-item>
+    <xy-sidenav-item icon="counter_1" name="Badge" routerLink="/badge">Badge</xy-sidenav-item>
+    <xy-sidenav-item icon="chevron_right" class="mySideNav" name="Breadcrumb" routerLink="/breadcrumb">Breadcrumb</xy-sidenav-item>
+    <xy-sidenav-item icon="crop_7_5" name="Button" routerLink="/button">Button</xy-sidenav-item>
+    <xy-sidenav-item icon="view_column" name="Button Toggle" routerLink="/button_toggle">Button Toggle</xy-sidenav-item>
+    <xy-sidenav-item icon="view_agenda" name="Card" routerLink="/card">Card</xy-sidenav-item>
+    <xy-sidenav-item icon="check_box" name="Checkbox" routerLink="/checkbox">Checkbox</xy-sidenav-item>
+    <xy-sidenav-item icon="chips" name="Chips" routerLink="/chips">Chips</xy-sidenav-item>
+  
+    <xy-sidenav-item icon="view_module" name="Container" routerLink="/container">Container</xy-sidenav-item>
+    <xy-sidenav-item icon="dashboard" name="Datepicker" routerLink="/datePicker">Datepicker</xy-sidenav-item>
+    <xy-sidenav-item icon="open_in_new" name="Dialog" routerLink="/dialog">Dialog</xy-sidenav-item>
+    <xy-sidenav-item icon="segment" name="Drop Down" routerLink="/select">Drop Down</xy-sidenav-item>
+    <xy-sidenav-item icon="apps" name="Elevation" routerLink="/elevation">Elevation</xy-sidenav-item>
+    <xy-sidenav-item icon="expention-panel" name="Expansion Panel" routerLink="/expention-panel">Expansion Panel</xy-sidenav-item>
+    <xy-sidenav-item icon="barefoot" name="Footer" routerLink="/footer">Footer</xy-sidenav-item>
+    <xy-sidenav-item icon="article" name="Form" routerLink="/form">Form</xy-sidenav-item>
+   
+    <xy-sidenav-item icon="text_fields" name="Input" routerLink="/input">Input</xy-sidenav-item>
+    <xy-sidenav-item icon="settings" name="Icon Menu" right-icon="more_vert" (clickRightEvent)="onClickDashboard()">Icon Menu</xy-sidenav-item>
+    <xy-sidenav-item icon="settings" name="Icon Menu 2" right-icon="more_vert" right-icon2="more_vert" (clickRightEvent)="onClickInbox()" (clickRight2Event)="onClickInbox2()" routerLink="/inbox">Icon Menu 2</xy-sidenav-item>
+    <xy-sidenav-item icon="list" name="Menu" routerLink="/menu">Menu</xy-sidenav-item>
+    <xy-sidenav-item icon="noIcon" name="No Icon">No Icon</xy-sidenav-item>
+    <xy-sidenav-item name="Progress Bar" icon="horizontal_rule" routerLink="/progressbar">Progress Bar</xy-sidenav-item>
+    <xy-sidenav-item name="Progress Spinner" icon="data_saver_off" routerLink="/progress-spinner">Progress Spinner</xy-sidenav-item>
+    <xy-sidenav-item icon="radio_button_checked" name="Radio" routerLink="/radio">Radio</xy-sidenav-item>
+    <xy-sidenav-item icon="toggle_off" name="Slide Toggle" routerLink="/slide-toggle">Slide Toggle</xy-sidenav-item>
+    
+    <xy-sidenav-item icon="tune" name="Slider" routerLink="/slider">Slider</xy-sidenav-item>
+    <xy-sidenav-item icon="space_bar" name="Snack Bar" routerLink="/snackbar">Snack Bar</xy-sidenav-item>
+    <xy-sidenav-item icon="account_tree" name="Stepper" routerLink="/stepper">Stepper</xy-sidenav-item>
+    <xy-sidenav-item icon="tab" name="Tab" routerLink="/tab">Tab</xy-sidenav-item>
+    <xy-sidenav-item icon="table" name="Table" routerLink="/table">Table</xy-sidenav-item>
+    <xy-sidenav-item icon="chat" name="Tooltip" routerLink="/tooltip">Tooltip</xy-sidenav-item>
+    <xy-sidenav-item icon="face" name="Top App Bar" routerLink="/xytopAppBar">Top App Bar</xy-sidenav-item>
+    <xy-sidenav-item icon="account_tree" name="Tree" routerLink="/tree">Tree</xy-sidenav-item>
+    <xy-sidenav-item icon="abc" name="Typography" routerLink="/typography">Typography</xy-sidenav-item>
+  </xy-sidenav>
+</xy-sidenav-container>

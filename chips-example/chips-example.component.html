@@ -1,0 +1,46 @@
+<h3>Default Chips</h3>
+<xy-chips-list>
+    <xy-chips chipsLabel="First Item" [selected]="true"></xy-chips>
+    <xy-chips chipsLabel="Second Item" ></xy-chips>
+    <xy-chips chipsLabel="Third Item"></xy-chips>
+    <!-- <xy-chips chipsLabel="Third Item" avatar="https://material.angular.io/assets/img/examples/shiba1.jpg"></xy-chips> -->
+</xy-chips-list>
+
+<br><br>
+
+<h3>Chips with Avatar</h3>
+<xy-chips-list>
+   <xy-chips chipsLabel="First Item" avatar="https://material.angular.io/assets/img/examples/shiba1.jpg"></xy-chips>
+   <xy-chips chipsLabel="Second Item" avatar="https://material.angular.io/assets/img/examples/shiba1.jpg"></xy-chips>
+   <xy-chips chipsLabel="Third Item" avatar="https://material.angular.io/assets/img/examples/shiba1.jpg"></xy-chips>
+</xy-chips-list>
+
+
+<br><br>
+
+<h3>Chips with Icon</h3>
+<xy-chips-list>
+   <xy-chips chipsLabel="First Item" [selected]="true" [checked]="true"></xy-chips>
+   <xy-chips chipsLabel="Second Item" [removeBtn]="true" ></xy-chips>
+   <xy-chips chipsLabel="Third Item"></xy-chips>
+</xy-chips-list>
+
+<br><br>
+
+<h3>With Remove Button</h3>
+
+<xy-chips-list>
+        <xy-chips *ngFor="let label of keywords" [chipsLabel]="label" [removeBtn]="true"  (removeChips)="removeChips(label)"></xy-chips>
+</xy-chips-list>
+
+<br>
+<br>
+
+<h3>Disable Chips</h3>
+
+<xy-chips-list>
+    <xy-chips chipsLabel="First Item" [selected]="true" [disabled]="true"></xy-chips>
+    <xy-chips chipsLabel="Second Item"  [removeBtn]="true" [disabled]="true"></xy-chips>
+    <xy-chips chipsLabel="Third Item" [disabled]="true"></xy-chips>
+</xy-chips-list>
+

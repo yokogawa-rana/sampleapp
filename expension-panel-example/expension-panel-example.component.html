@@ -1,0 +1,67 @@
+<h3>Default State</h3>
+
+<xy-accordion>
+    
+  <xy-expension-panel
+      title="Expention Title"
+      [noIcon]="false"
+    >
+      <p>Lorem Ipsum is not a close derive for all elements</p>
+    </xy-expension-panel>
+</xy-accordion>
+
+<br>
+
+
+
+<h3>Expended State</h3>
+
+<xy-accordion>
+    
+  <xy-expension-panel
+      title="Expention Title"
+      subtitle="Summary of the expention title"
+      [noIcon]="false"
+    >
+      <p>This is the primary content of the panel.</p>
+  </xy-expension-panel>
+  <xy-expension-panel
+  title="Expention Title"
+  subtitle="Summary of the expention title"
+  [noIcon]="false"
+  >
+  <p>This is the primary content of the panel.</p>
+  </xy-expension-panel>
+</xy-accordion>
+
+
+
+<br>
+<h3>Expended Panel without icon</h3>
+
+<xy-accordion>
+    
+<xy-expension-panel
+    title="Expention Title"
+    subtitle="Summary of the expention title"
+    [noIcon]="true"
+  >
+    <p>This is the primary content of the panel.</p>
+  </xy-expension-panel>
+</xy-accordion>
+
+
+
+<h3>Disabled Accordion</h3>
+<xy-accordion>
+    
+    <xy-expension-panel
+      title="Jose Maria:"
+      subtitle="44 tasks"
+      theme="critical"
+      icon="account_circle"
+      [disabled]=true
+    >
+      <p>This is the primary content of the panel.</p>
+    </xy-expension-panel>
+</xy-accordion>
